@@ -1,13 +1,55 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(187, 187, 187);
+  background: linear-gradient(
+    to left,
+    rgb(218, 217, 217),
+    rgb(194, 168, 168) 50%,
+    #eee 75%,
+    rgb(128, 105, 105) 75%
+  );
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.jumbotron-fluid {
+  color: rgb(255, 254, 242);
+  font-weight: bolder;
+  font-size: 120px;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: round;
+  background-image: url("https://www.madinnorway.org/wp-content/uploads/2021/02/books-1163695_1280II.png");
+  height: 350px;
+}
+
+div.card-body {
+  background: rgb(235, 235, 235);
+  color: rgb(92, 92, 92);
+  border: solid grey;
+}
+
+#footer {
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  color: #699288;
+}
+#root > div.container > div > div:nth-child(n) > div > img {
+  height: 180px;
+  width: auto !important;
 }
