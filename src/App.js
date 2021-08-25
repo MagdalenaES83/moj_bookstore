@@ -9,7 +9,8 @@ import MyCarousel from "./components/MyCarousel";
 import MyWarning from "./components/MyWarning";
 import SingleBook from "./components/SingleBook";
 import onebook from './BOOKS/horror.json'
-
+import MyFilter from "./components/MyFilter";
+import BookList from "./components/BookList";
 
 
 
@@ -19,17 +20,22 @@ function App() {
       <MyNavBar title='Bokhandel'  />
       <MyWarning />
       <MyJumbo title = 'WELCOME'></MyJumbo>
+      <MyFilter></MyFilter>
       <Container> <h2> SINGLE BOOK, EXERCISE No. 3</h2>
-      <SingleBook book={onebook[0]} />
-      
+
+      {/* <BookList /> */}
+      <SingleBook book={onebook[13]} /> 
       </Container>
-      
+      <Container> 
+        
+        <BookList />
+        </Container> 
        <Container>
         <h2 className='mt-4'>CAROUSEL </h2><MyCarousel></MyCarousel>
          </Container>
       
       
-      <LatestRelease></LatestRelease> 
+      {/* <LatestRelease></LatestRelease>  */}
 
      
       <MyFooter />
