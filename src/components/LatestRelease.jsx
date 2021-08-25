@@ -4,6 +4,7 @@ import history from "../BOOKS/history.json";
 import fantasy from "../BOOKS/fantasy.json";
 import scifi from "../BOOKS/scifi.json";
 import React from "react"
+import MyBadge from './MyBadge';
 
 
 
@@ -18,7 +19,7 @@ class  LatestRelease extends React.Component {
   return (
       <Container>
         <Row> 
-          
+         
    <Button onClick={() => this.setState({selectedCategory: history})} variant="warning" className='m-2'>History</Button>{' '}
   <Button onClick={() => this.setState({selectedCategory: horror})} variant="warning" className='m-2'>Horror</Button>{' '}
   <Button onClick={() => this.setState({selectedCategory: fantasy})} variant="warning" className='m-2'>Fantasy</Button> 
@@ -32,11 +33,12 @@ class  LatestRelease extends React.Component {
                 className='mb-1, bg-transparent'
                   variant="top"
                   src={book.img}                />
-                  <Card.Text className='p-1'>
                   
+                  <Card.Text className='p-1'>
+                 
       {book.title}
     </Card.Text>
-               <Button variant="warning">Price: {book.price}</Button>
+               <Button variant="warning"> <MyBadge color='danger' title='SALE' /> Price: {book.price}</Button>
               </Card>
             </Col>
           ))}
