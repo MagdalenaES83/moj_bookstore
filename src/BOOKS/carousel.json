@@ -1,0 +1,100 @@
+[
+  {
+    "asin": "1608090663",
+    "title": "Fly by Night (A Jammer Davis Thriller)",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/71RiSW6zL2L.jpg",
+    "price": 12.44,
+    "category": "horror"
+  },
+  {
+    "asin": "0345806492",
+    "title": "Inferno: En espanol (Spanish Edition)",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/91vHqD35GOL.jpg",
+    "price": 12.53,
+    "category": "horror"
+  },
+  {
+    "asin": "1501167154",
+    "title": "The Four Legendary Kingdoms (Jack West, Jr.)",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/81cFEf5fcrL.jpg",
+    "price": 15.29,
+    "category": "horror"
+  },
+  {
+    "asin": "1489713921",
+    "title": "River Divided",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/71nt4jhGwUL.jpg",
+    "price": 3.23,
+    "category": "horror"
+  },
+  {
+    "asin": "0692305475",
+    "title": "The Searchers",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/415WRSuf5FL.jpg",
+    "price": 4.59,
+    "category": "horror"
+  },
+  {
+    "asin": "0804127093",
+    "title": "The Quick and the Dead",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/71EfTDy1sgL.jpg",
+    "price": 27.62,
+    "category": "horror"
+  },
+  {
+    "asin": "0990846105",
+    "title": "Apparition Island (4) (The Windjammer Mystery Series)",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/51yDJ5TgDbL.jpg",
+    "price": 12.72,
+    "category": "horror"
+  },
+  {
+    "asin": "0804121060",
+    "title": "Inferno: A Novel (Robert Langdon)",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/A1p-6W6vlYL.jpg",
+    "price": 23.24,
+    "category": "horror"
+  },
+  {
+    "asin": "0525497307",
+    "title": "Typhoon Fury (The Oregon Files)",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/91wyICGOyHL.jpg",
+    "price": 29.74,
+    "category": "horror"
+  },
+  {
+    "asin": "1480872016",
+    "title": "The Shaft: A Supernatural Thriller",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/517qmE7PxGL.jpg",
+    "price": 18.14,
+    "category": "horror"
+  },
+  {
+    "asin": "0875654282",
+    "title": "Sins of the Younger Sons",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/81sC1XaM7XL.jpg",
+    "price": 24.89,
+    "category": "horror"
+  },
+  {
+    "asin": "1416509054",
+    "title": "Ghost (Paladin of Shadows, Book 1)",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/51ptwTm04iL.jpg",
+    "price": 18.89,
+    "category": "horror"
+  },
+  {
+    "asin": "0345514513",
+    "title": "The Brotherhood of the Rose: A Novel (Mortalis)",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/81IFfeULcML.jpg",
+    "price": 12.8,
+    "category": "horror"
+  },
+  {
+    "asin": "0857387936",
+    "title": "Zambezi",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/51x4kzKCW%2BL.jpg",
+    "price": 15.72,
+    "category": "horror"
+  }
+]

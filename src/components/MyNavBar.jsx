@@ -25,6 +25,10 @@ const MyNavBar = (props) => (
           {" "}
           <Nav.Link href="#">BROWSE</Nav.Link>
         </Link>
+        <Link to="/list">
+          {" "}
+          <Nav.Link href="#">CAROUSEL</Nav.Link>
+        </Link>
       </Nav>
       <Nav></Nav>
     </Navbar.Collapse>

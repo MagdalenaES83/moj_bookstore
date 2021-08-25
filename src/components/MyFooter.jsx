@@ -11,7 +11,7 @@ const MyFooter = () => (
     </Col>
     <Col>
       
-      <a href="#">Go to TOP </a>
+      <a href="#navbar">Go to TOP </a>
     </Col>
     <Col>
       
