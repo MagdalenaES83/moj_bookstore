@@ -6,13 +6,13 @@ const MyCarousel = () => {
 return (
 
 <Container>
-<Row className="justify-content-center m-5">
+<Row className=" w-50 justify-content-center m-5">
 <Carousel fade>
 {books.map((book) => (
     
     <Carousel.Item key={book.asin}>
       <img
-        className="d-block caro"
+        className="d-block caro w-50"
         src={book.img}
         alt="First slide"
       />

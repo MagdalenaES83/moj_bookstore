@@ -1,7 +1,7 @@
 import { Row, Col } from "react-bootstrap";
 
 const MyFooter = () => (
-  <Row id="footer" className="d-flex, bg-dark">
+  <Row id="footer" className="d-flex, bg-dark mt-5">
     <Col>
       
       Copyright is a type of intellectual property that gives its owner the

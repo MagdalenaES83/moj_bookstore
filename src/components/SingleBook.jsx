@@ -1,25 +1,37 @@
-import { Col, Row, Card, Container, ListGroup } from "react-bootstrap";
-import React from "react";
-import MyBadge from './MyBadge';
+import React from 'react'
+import { Card, Container, Col, Row } from 'react-bootstrap'
+import MyBadge from './MyBadge'
+//import CommentArea from './CommentArea'
 
 class SingleBook extends React.Component {
-  render() {
-    return (
-      <Container>
-        <Row>
-          <Col md={6} lg={6}>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={this.props.book.img} />
-              <Card.Body>
-                <Card.Title>{this.props.book.title}</Card.Title>
-                <Card.Title><MyBadge color='danger' title='SALE' /> {this.props.book.price}</Card.Title>
-              </Card.Body>
-              <ListGroup className="list-group-flush"></ListGroup>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
+
+    state = {
+        selected: false
+    }
+
+    render() {
+        return (
+            <>
+            <Container> 
+                <Row>   
+                    <Col md={4}> 
+                <Card
+                    // onClick={() => this.setState({ selected: !this.state.selected })}
+                    onClick={() => this.props.changeSelectedBook(this.props.book.asin)}
+                    style={{ border: this.props.selectedB === this.props.book.asin ? '3px solid yellow' : 'none' }}
+                >
+                    <Card.Img variant="top" src={this.props.book.img} className='bookCover'/>
+                    <Card.Body>
+                        <Card.Title className='title' style={{ color: 'black' }}><MyBadge> </MyBadge>{this.props.book.title}</Card.Title>
+                    </Card.Body>
+                </Card></Col></Row> </Container> 
+                {/* {
+                    this.state.selected && <CommentArea asin={this.props.book.asin} />
+                } */}
+            </>
+        )
+    }
+
 }
-export default SingleBook;
+
+export default SingleBook

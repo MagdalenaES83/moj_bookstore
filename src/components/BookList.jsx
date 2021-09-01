@@ -1,48 +1,70 @@
-import { Row, Container, Button, Col, ListGroup} from "react-bootstrap";
 import React from "react";
-
-
-import horror from "../BOOKS/horror.json";
-import history from "../BOOKS/history.json";
-import fantasy from "../BOOKS/fantasy.json";
-import scifi from "../BOOKS/scifi.json";
-
+import SingleBook from "./SingleBook";
+import { Col, Container, Form, Row } from "react-bootstrap";
+import CommentArea from "./CommentArea";
 
 class BookList extends React.Component {
-  state = {
-    selectedCategory: horror,
-  };
+   state = {
+     searchQ: "",
+     selectedB: null,
+   };
 
   render() {
     return (
       <Container>
-           <Button onClick={() => this.setState({selectedCategory: history})} variant="warning" className='m-2'>History</Button>{' '}
-  <Button onClick={() => this.setState({selectedCategory: horror})} variant="warning" className='m-2'>Horror</Button>{' '}
-  <Button onClick={() => this.setState({selectedCategory: fantasy})} variant="warning" className='m-2'>Fantasy</Button> 
-  <Button onClick={() => this.setState({selectedCategory: scifi})} variant="warning" className='m-2'>Scifi</Button>{' '} 
         <Row>
+          <Col md={10}>
+            <Row>
+              <Col>
+                <Form.Group>
+                  <Form.Label>
+                    <h3 className="my-3">Search Book </h3>{" "}
+                  </Form.Label>
+                  <Form.Control
+                    id="input"
+                    type="text"
+                    placeholder="Search here"
+                    value={this.state.searchQ}
+                    onChange={(e) =>
+                      this.setState({ searchQ: e.target.value })
+                    }
+                  />
+                </Form.Group>
+              </Col>
+            </Row>
 
-          {this.state.selectedCategory.map((book) => (
-            
-              <ListGroup key={book.asin}>
-  <ListGroup.Item>{book.title}</ListGroup.Item>
-  </ListGroup>
-              
-             
-            
-          ))}
+            <Row>
+              {this.props.books
+                // // FILTER FOR SEARCHING
+                .filter((b) =>
+                  b.title.toLowerCase().includes(this.state.searchQ)
+                )
+                .slice(0, 30)
+                // MAPING SINGLE-BOOK FOR FULL ARRAY
+                .map((b) => (
+                  <Col xs={2}>
+                    <SingleBook
+                      book={b}
+                      selectedB={this.state.selectedB}
+                      changeSelectedBook={(asin) =>
+                        this.setState({
+                          selectedB: asin,
+                        })
+                      }
+                    />
+                  </Col>
+                ))}
+            </Row>
+          </Col>
+          <Col md={2}>
+            <h2 className="mt-3">Comments </h2>
+
+            <CommentArea asin={this.state.selectedB} />
+          </Col>
         </Row>
       </Container>
     );
   }
 }
+
 export default BookList;
-
-
-{/* <ListGroup>
-  <ListGroup.Item>Cras justo odio</ListGroup.Item>
-  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-  <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-  <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-</ListGroup> */}

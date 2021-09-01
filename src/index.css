@@ -6,9 +6,9 @@ body {
   background: linear-gradient(
     to left,
     rgb(218, 217, 217),
-    rgb(194, 168, 168) 50%,
+    rgb(215, 213, 224) 50%,
     #eee 75%,
-    rgb(128, 105, 105) 75%
+    rgb(212, 209, 209) 75%
   );
 }
 
@@ -27,10 +27,20 @@ code {
   height: 350px;
 }
 
+div.card {
+  width: 155px;
+  background-color: #699288;
+  height: 300px;
+  margin-bottom: 5%;
+}
+
 div.card-body {
   background: rgb(235, 235, 235);
   color: rgb(92, 92, 92);
-  border: solid grey;
+  border: solid 3px transparent;
+  border-radius: 10px;
+
+  padding: 2%;
 }
 
 #footer {
@@ -46,40 +56,46 @@ div.card-body {
   justify-content: center;
   color: #699288;
 }
-#root > div.container > div > div:nth-child(n) > div > img {
-  height: 180px;
-  width: auto !important;
-}
 
-#root > div:nth-child(n) > div > div > div > div > div:nth-child(n) > img {
-  height: 350px;
-}
-
-#root
-  > div:nth-child(n)
-  > div.justify-content-center.mt-5.row
-  > div:nth-child(n)
-  > div
-  > p {
-  height: 90px;
-}
-
-#root
-  > div:nth-child(n)
-  > div.justify-content-center.mt-5.row
-  > div:nth-child(n)
-  > div
-  > p {
+.bookCover {
+  display: block;
+  max-width: 130px;
+  max-height: 165px;
+  width: auto;
+  height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 800;
+  text-align: center;
+
+  position: absolute;
+
+  bottom: 2px;
+  margin-left: 12px;
+  margin-bottom: 20px;
 }
-#root
-  > div:nth-child(n)
-  > div.justify-content-center.mt-5.row
-  > div:nth-child(n)
-  > div {
-  margin-bottom: 10px;
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 5%;
+  font-size: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: bottom;
+}
+
+.single {
+  margin-top: 35px;
+}
+.deleteB {
+  font-size: 15px;
+}
+
+.listComment {
+  padding: 0px;
+  font-size: 12px;
+}
+.writeCom {
+  padding: 0%;
+  width: 100%;
+  margin-left: 15px;
 }
